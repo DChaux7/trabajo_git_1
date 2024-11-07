@@ -8,83 +8,83 @@
     <title>Datos usuario</title>
 </head>
 <!-- Aquí está el cuerpo de app web desde Datos -->
-<body class="bg-success"> 
+<body class="bg-warning"> 
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="bg-success-subtle card p-4 shadow" style="width: 100%; max-width: 400px;" data-bs-theme="dark">
-        <div class="row">
+        <div class="bg-warning-subtle card p-4 shadow" style="width: 100%; max-width: 400px;" data-bs-theme="dark">
+          <div class="row">
             <div class="col">
               <!-- Input 1 Nombre -->
               <label>Primer Nombre</label>
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name"  disabled>
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name" value="<%= datos['primer_nombre'] %>" disabled>
             </div>
             <div class="col">
               <!-- Input 2 Nombre -->
               <label>Segundo Nombre</label>
-              <input type="text" class="form-control" placeholder="Middle name" aria-label="Middle name"  disabled>
+              <input type="text" class="form-control" placeholder="Middle name" aria-label="Middle name" value="<%= datos['segundo_nombre'] %>" disabled>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <!-- Input 1 Apellido -->
               <label>Primer Apellido</label>
-              <input type="text" class="form-control" placeholder="First surname" aria-label="First surname"  disabled>
+              <input type="text" class="form-control" placeholder="First surname" aria-label="First surname" value="<%= datos['primer_apellido'] %>" disabled>
             </div>
             <div class="col">
               <!-- Input 2 Apellido -->
                <label>Segundo Apellido</label>
-              <input type="text" class="form-control" placeholder="Second last name" aria-label="second last name"  disabled>
+              <input type="text" class="form-control" placeholder="Second last name" aria-label="second last name" value="<%= datos['segundo_apellido'] %>" disabled>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <!-- Input Telefono -->
                <label>Telefono</label>
-              <input type="text" class="form-control" placeholder="Phone" aria-label="Phone"  disabled>
+              <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" value="<%= datos['telefono'] %>" disabled>
             </div>
             <div class="col">
               <!-- Input Fecha de Nacimiento -->
                <label>Fecha de Nacimiento</label>
-              <input type="text" class="form-control" placeholder="Birthdate" aria-label="Birthdate"  disabled>
+              <input type="text" class="form-control" placeholder="Birthdate" aria-label="Birthdate" value="<%= datos['fecha_nacimiento'] %>" disabled>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <!-- Input tipo Sangre -->
                <label>Tipo de Sangre</label>
-              <input type="text" class="form-control" placeholder="Blood type" aria-label="Blood type"  disabled>
+              <input type="text" class="form-control" placeholder="Blood type" aria-label="Blood type" value="<%= datos['rh'] %>" disabled>
             </div>
             <div class="col">
               <!-- Input Direccion -->
                <label>Direccion</label>
-              <input type="text" class="form-control" placeholder="address" aria-label="addres"  disabled>
+              <input type="text" class="form-control" placeholder="address" aria-label="addres" value="<%= datos['direccion'] %>" disabled>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <!-- Input Email -->
                <label>Email</label>
-              <input type="text" class="form-control" placeholder="Email" aria-label="Email"  disabled>
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email" value="<%= datos['correo'] %>" disabled>
             </div>
             <div class="col">
               <!-- Input Ciudad -->
                <label>Ciudad</label>
-              <input type="text" class="form-control" placeholder="City" aria-label="City"  disabled>
+              <input type="text" class="form-control" placeholder="City" aria-label="City" value="<%= datos['ciudad'] %>" disabled>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <!-- Input N. Identificacion -->
                <label>N. Identificacion</label>
-              <input type="text" class="form-control" placeholder="Id" aria-label="Id"  disabled>
+              <input type="text" class="form-control" placeholder="Id" aria-label="Id" value="<%= datos['identificacion'] %>" disabled>
             </div>
             <div class="col">
               <!-- Input Ocupacion -->
                <label>Ocupacion</label>
-              <input type="text" class="form-control" placeholder="Occupation" aria-label="Occupation"  disabled>
+              <input type="text" class="form-control" placeholder="Occupation" aria-label="Occupation" value="<%= datos['ocupacion'] %>" disabled>
             </div>
           </div>
           <br>
-          <a href="/bienvenido" class="btn btn-success">Volver</a>
+          <a href="/bienvenido" class="btn btn-warning">Volver</a>
         </div>  
     </div>
 </body>
